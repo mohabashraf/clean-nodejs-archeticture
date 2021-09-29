@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint '**/*.js' --write"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +17,8 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "prettier-eslint": "^13.0.0"
-  },
-  "dependencies": {
+    "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1"
-  }
+  },
+  "dependencies": {}
 }
