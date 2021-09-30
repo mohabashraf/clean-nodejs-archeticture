@@ -9,6 +9,11 @@
     "lint:fix": "prettier-eslint '**/*.js' --write",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier-eslint '**/*.js' --write"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
