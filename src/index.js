@@ -1,7 +1,5 @@
-const test = 'Mohab'
+const functions = {
+  add: (num1, num2) => num1 + num2,
+};
 
-function name (params) {
-  console.log('hops')
-}
-
-name()
+module.exports = functions;

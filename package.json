@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint '**/*.js' --write",
     "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.js": [
-      "prettier-eslint '**/*.js' --write"
+      "npm run lint:fix"
     ]
   },
   "keywords": [],
@@ -24,6 +24,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "husky": "^7.0.0",
+    "jest": "^27.2.4",
     "lint-staged": "^11.1.2",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1"
